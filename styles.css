@@ -131,7 +131,6 @@ body {
 }
 
 body {
-  color: #333;
   line-height: 1.6;
 }
 
@@ -232,7 +231,7 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--text-color);
 }
 
 .about p,
@@ -248,8 +247,8 @@ body {
   gap: 2rem;
 }
 
-.card {
-  background: #f9f9f9;
+  .card {
+  background: var(--card-bg);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -258,14 +257,14 @@ body {
 
 .card h3 {
   margin-bottom: 1rem;
-  color: #ff6347;
+  color: var(--primary-color);
 }
 
 .footer {
   text-align: center;
   padding: 1rem;
-  background: #333;
-  color: #fff;
+  background: var(--secondary-color);
+  color: var(--bg-color);
 }
 /* Capabilities grid */
 .capabilities-list {
