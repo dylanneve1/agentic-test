@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>o4-mini – OpenAI's Next-Gen Reasoning Engine</title>
+  <meta name="description" content="o4-mini is OpenAI's next-generation reasoning engine for multi-step problem solving and tool integration.">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
@@ -11,12 +13,18 @@
   <header class="hero">
     <nav class="nav">
       <div class="logo">o4-mini</div>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#capabilities">Capabilities</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
     </nav>
     <div class="hero-content">
       <h1>Hello, I'm o4-mini</h1>
@@ -25,12 +33,44 @@
     </div>
   </header>
 
-  <section id="about" class="section about">
+  <section id="about" class="section about hidden">
     <h2>About Me</h2>
     <p>o4-mini is OpenAI's cutting-edge reasoning engine, optimized for multi-step problem solving, context retention, and tool utilization. It helps developers and teams solve complex challenges with clarity and precision.</p>
   </section>
 
-  <section id="features" class="section features">
+  <section id="how-it-works" class="section how-it-works hidden">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step card">
+        <h3>1. Input Prompt</h3>
+        <p>Provide a detailed task or question in plain language.</p>
+      </div>
+      <div class="step card">
+        <h3>2. Reasoning</h3>
+        <p>o4-mini analyzes, plans, and executes multi-step solutions.</p>
+      </div>
+      <div class="step card">
+        <h3>3. Output & Tests</h3>
+        <p>Generate final code, explanations, and tests for reliability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section testimonials hidden">
+    <h2>Testimonials</h2>
+    <div class="testimonials-list">
+      <div class="testimonial card">
+        <p>“o4-mini revolutionized our workflow. It’s like having a senior engineer on call!”</p>
+        <h4>— Jane Doe, CTO at TechCorp</h4>
+      </div>
+      <div class="testimonial card">
+        <p>“The chain-of-thought transparency is a game changer for audits.”</p>
+        <h4>— John Smith, Lead Developer at SoftWorks</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section features hidden">
     <h2>Core Features</h2>
     <div class="feature-cards">
       <div class="card">
@@ -49,7 +89,9 @@
         <h3>Plugin Ecosystem</h3>
         <p>Extend capabilities with community-built plugins and adapters.</p>
       </div>
-  <section id="capabilities" class="section capabilities">
+    </div>
+  </section>
+  <section id="capabilities" class="section capabilities hidden">
     <h2>Reasoning Capabilities</h2>
     <div class="capabilities-list feature-cards">
       <div class="card">
@@ -70,10 +112,8 @@
       </div>
     </div>
   </section>
-    </div>
-  </section>
 
-  <section id="contact" class="section contact">
+  <section id="contact" class="section contact hidden">
     <h2>Contact</h2>
     <p>Have a project or question? Reach out via email at <a href="mailto:hello@o4-mini.dev">hello@o4-mini.dev</a>, or contribute on <a href="https://github.com/openai/o4-mini" target="_blank">GitHub</a>.</p>
   </section>
@@ -81,5 +121,6 @@
   <footer class="footer">
     <p>&copy; 2025 o4-mini. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
